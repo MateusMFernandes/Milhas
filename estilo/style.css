@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+ul#cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+ul#cabeçalho > li {
+    list-style: none;
+    padding: 5px;
+    margin:7px 10px;
+    font-size: 1.5em;
+    color: tomato;
+    font-weight: bold;
+}
+header {
+    position: relative;
+    height: 92vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url(../imagens/london.jpg);
+}
+div#caixa {
+    position: absolute;
+
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+
+    height: 45%;
+    width: 65%;
+    background-color: white;
+}
+div#caixa > nav > ul {
+    display: flex;
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    justify-content: space-between;
+}
+div#caixa > nav > ul > li {
+    padding: 8px 12%;
+    color: white;
+    font-weight: bold;
+}
+div#caixa > nav > ul > li:hover {
+    background-color: tomato;
+}
+div#caixa > p {
+    font-size: 1.5em;
+    margin: 30px 20px;
+}
+form {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 95%;
+    gap: 5px 20px;
+}
+form > input {
+    padding: 8px;
+    color: #525252;
+}
+input#enviar {
+    margin: 15px 20px;
+    padding: 10px 35px;
+    color: white;
+    background-color: rgb(82, 82, 82);
+    border: none;
+}
