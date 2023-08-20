@@ -4,6 +4,9 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-color: #e6e6e6;
+}
 nav > ul {
     display: flex;
     justify-content: space-between;
@@ -48,7 +51,8 @@ form > input {
     padding: 10px 10px;
     color: #838486;
 }
-#botao {
+.botao {
+    cursor: pointer;
     margin: 10px 0px 32px 0px;
     padding: 10px 19px;
     font-size: 15px;
@@ -92,11 +96,80 @@ section > div > img {
 }
 #nature {
     margin: 0px 16px;
-    background-color: white;
 }
 #nature > div > img {
     width: 100%;
 }
+div#nature > div {
+    background-color: white;
+    padding-bottom: 5px;
+    margin-bottom: 5%;
+}
+#nature > div > h3 {
+    margin: 15px;
+    font-weight: normal;
+}
 #nature > div > p {
-    margin: 20px 10px;
+    margin: 20px 15px;
+    line-height: 25px;
+}
+#nature > div > p > span {
+    color: #838486;
+}
+#nature > div > p > a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+#nature > div#email {
+    margin-top: 10%;
+    padding-top: 15px;
+    color: white;
+    background-color: rgb(94, 94, 94);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+#nature > div#email > h3 {
+    font-size: 1.7em;
+}
+#nature > div#email > form > button {
+    padding: 10px 19px;
+    margin: 10px 0px;
+    font-size: 15px;
+    background-color: rgb(252, 124, 124);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+div#contato {
+    margin: 0px 16px;
+}
+div#contato > h3 {
+    margin: 25px 0px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+div#contato > ul {
+    line-height: 25px;
+    margin: 5% 16px;
+}
+div#contato > form {
+    margin: 0px;
+}
+div#contato > form > input {
+    margin-top: 5%;
+    padding: 10px;
+}
+div#contato > form > .botao {
+    background-color: black;
+}
+footer {
+    text-align: center;
+    background-color: #e6e6e6;
+}
+footer > p {
+    color: #838486;
+    margin-bottom: 30px;
+}
+footer > p > a {
+    color: #838486;
 }

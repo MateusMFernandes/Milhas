@@ -26,7 +26,7 @@
                <input type="text" name="from" id="from" value="Departing from">
                <label for="To">To</label>
                <input type="text" name="To" id="To" value="Arriving at">
-               <button id="botao">Search and find dates</button>
+               <button class="botao">Search and find dates</button>
             </form>
         </article>
     </header>
@@ -45,14 +45,49 @@
         <div id="nature">
             <div><img src="imagens/ocean.jpg" alt="ocean">
                 <h3>West Coast, Norway</h3>
-                <p>Roundtrip from $79</p>
+                <p><span>Roundtrip from $79</span></p>
                 <p>Praesent tincidunt sed tellus ut <br>
                 rutreum sed vitae justo.
                 </p>
-                <p>Buy Tickets</p>
+                <p><a href="#">Buy Tickets</a></p>
             </div>
-            <div><img src="imagens/mountains.jpg" alt="montanha"><p></p></div>
+            <div><img src="imagens/mountains.jpg" alt="montanha">
+                <h3>Mountains, Austria</h3>
+                <p><span>One-way from $39</span></p>
+                <p>Praesent tincidunt sed tellus ut<br>
+                rutrum sed vitae justo.</p>
+                <p><a href="#">Buy Tickets</a></p>
+            </div>
+            <div id="email">
+                <h3>Get the best Offers First!</h3>
+                <p>Join our newsletter</p>
+                <form >
+                    <label for="mail">E-mail:</label>
+                    <input type="email" name="mail" id="mail" value="Your Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div id="contato">
+            <h3>Contact</h3>
+            <p>Let us book your next trip!</p>
+            <ul>
+                <li>Chicago, US</li>
+                <li>Phone: 00 151515</li>
+                <li>Email: mail@gmail.com</li>
+            </ul>
+            <form>
+                <input type="text" name="Name" id="Name" value="Name">
+                <input type="text" name="E-mail" id="E-mail" value="E-mail">
+                <input type="text" name="Message" id="Message" value="Message">
+                <button class="botao">SEND MESSAGE</button>
+            </form>
         </div>
     </main>
+    <footer>
+        <p>Find Us On</p>
+        <p></p>
+        <p>Poweres by <a href="#">w3.css</a></p>
+    </footer>
 </body>
 </html>
