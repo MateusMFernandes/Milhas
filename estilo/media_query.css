@@ -1,0 +1,46 @@
+@charset "UTF-8";
+ @media screen and (min-width: 450px){
+    form > input {
+        width: 94%;
+    }
+    div#contato > form > input {
+        margin-top: 3%;
+    }
+    @media screen and (min-width: 768px) {
+        nav > ul {
+            justify-content: space-around;
+        }
+        article {
+            padding: 5% 14% 8% 14%;
+            background-size: cover;
+            background-image: url(../imagens/london.jpg);
+        }
+        div#caixa > form > div{
+            display: inline-block;
+            width: 47%;
+            margin: 0% 1%;
+        }
+        div#caixa {
+            background-color: white;
+        }
+        h2 {
+            padding-top: 4%;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 40%;
+        }
+        section > div:nth-child(n+2) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            
+            
+        }
+        
+        
+        
+
+    }
+}

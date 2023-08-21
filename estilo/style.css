@@ -17,17 +17,18 @@ nav > ul > li {
     font-weight: bold;
     color: #F44336;
 }
-header > article > ul {
+header > article > div#caixa > ul {
     display: flex;
     list-style: none;
 }
-header > article > ul > li {
+header > article > div#caixa > ul > li {
     width: 100%;
     padding: 10px 20px;
     color: white;
     background-color: rgb(0, 0, 0);
+    text-align: center;
 }
-header > article > ul > li:hover {
+header > article > div#caixa > ul > li:hover {
     color: white;
     background-color: #F44336;
 }
@@ -40,12 +41,12 @@ h1 {
 form {
     margin: 0px 15px;
 }
-form > input { 
+.form { 
     display: block;
     width: 92%;
     font-size: 15px;
     margin-bottom: 5px;
-    padding: 10px 10px;
+    padding: 12px 10px;
     color: #838486;
 }
 .botao {
