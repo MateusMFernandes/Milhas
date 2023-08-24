@@ -1,6 +1,9 @@
 @charset "UTF-8";
  @media screen and (min-width: 450px){
-    form > input {
+    form > input.form {
+        width: 94%;
+    }
+    form > div > input.form {
         width: 94%;
     }
     div#contato > form > input {
@@ -20,6 +23,9 @@
             width: 47%;
             margin: 0% 1%;
         }
+        header > article > div#caixa > form > .botao {
+            margin-left: 5px;
+        }
         div#caixa {
             background-color: white;
         }
@@ -28,19 +34,59 @@
         }
         section {
             display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 40%;
+            grid-template-columns: repeat(4, 23.5%);
+            grid-template-rows: repeat(2, 44%);
+            grid-template-areas: "um um dois tres"
+            "um um quatro cinco";
+            gap: 14px;
         }
-        section > div:nth-child(n+2) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-
-            
-            
+        #img1 {
+            grid-area: um;
+            height: 100%;
         }
-        
-        
-        
+        #img2{
+            grid-area: dois;
+            height: 100%;
+        }
+        #img3{
+            grid-area: tres;
+            height: 100%;
+        }
+        #img4{
+            grid-area: quatro;
+            height: 100%;
+        }
+        #img5{
+            grid-area: cinco;
+            height: 100%;
+        }
+        main {
+            margin: auto;
+            max-width: 760px;
+        }
+        main > h2 {
+            padding-top: 20px;
+        }
+        div#nature{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 41%;
+            grid-template-areas: "div div"
+            "email email";
+            gap: 14px;
+        }
+        div#nature > div#email {
+            grid-area: email;
+            margin-top: 0%;
+        }
+        form > input.form {
+            width: 97%;
+        }
+        footer {
+            margin: auto;
+            max-width: 760px;
+        }
 
+        
     }
 }
