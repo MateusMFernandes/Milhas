@@ -116,11 +116,11 @@
                 gap: 18px;
             }
             div#contato > form > input {
-                margin-top: 1%;
+                margin-top: 1.5%;
                 padding: 15px;
             }
             div#contato > ul {
-                margin-left: 20px;
+                margin: 10px 5px 5px 20px;
             }
             form > input.form {
                 width: 98%;
