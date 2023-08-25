@@ -15,8 +15,9 @@
         }
         nav > ul {
             justify-content: space-around;
+            background-color: white;
         }
-        article {
+        header {
             padding: 5% 14% 8% 14%;
             background-size: cover;
             background-image: url(../imagens/london.jpg);
@@ -45,30 +46,25 @@
         }
         #img1 {
             grid-area: um;
-            height: 100%;
         }
         #img2{
             grid-area: dois;
-            height: 100%;
         }
         #img3{
             grid-area: tres;
-            height: 100%;
         }
         #img4{
             grid-area: quatro;
-            height: 100%;
         }
         #img5{
             grid-area: cinco;
-            height: 100%;
         }
         main {
             margin: auto;
             max-width: 760px;
         }
         main > h2 {
-            padding-top: 20px;
+            margin-top: 0px;
         }
         div#nature{
             display: grid;
@@ -89,7 +85,47 @@
             margin: auto;
             max-width: 760px;
         }
-
+        @media screen and (min-width: 1366px) {
+            nav > ul {
+                justify-content: space-between;
+            }
+            header {
+                padding-top: 14%;
+                padding-bottom: 14%;
+            }
+            article {
+                margin: auto;
+                max-width: 890px;
+            }
+            form > div > input.form {
+                width: 96%;
+            }
+            main {
+                max-width: none;
+                max-width: 1100px;
+            }
+            section {
+                grid-template-columns: repeat(4, 255px);
+                grid-template-rows: repeat(2, 192px);
+                gap: 16px;
+            }
+            main > h2 {
+                padding-top: 2.5%;
+            }
+            div#nature {
+                gap: 18px;
+            }
+            div#contato > form > input {
+                margin-top: 1%;
+                padding: 15px;
+            }
+            div#contato > ul {
+                margin-left: 20px;
+            }
+            form > input.form {
+                width: 98%;
+            }
+        }
         
     }
 }
